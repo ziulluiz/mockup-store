@@ -85,11 +85,11 @@ export const ProductDetail = () => {
       { name: 'hash_algorithm', value: 'HMACSHA256' },
       { name: 'responseFailURL', value: 'https://pagosonline.mx/DConnect/response.php' },
       { name: 'responseSuccessURL', value: 'https://pagosonline.mx/DConnect/response.php' },
-      { name: 'storename', value: '62666666' },
+      { name: 'storename', value: '62110594' },
       { name: 'timezone', value: 'America/Mexico_City' },
       { name: 'txntype', value: 'sale' },
       { name: 'txndatetime', value: txndatetime },
-      { name: 'sharedSecret', value: 'i88E-;KYkS' },
+      { name: 'sharedSecret', value: 'S1ullu1s' },
       { name: 'hashExtended', value: ''},
     ];
 
@@ -102,7 +102,7 @@ export const ProductDetail = () => {
     const stringForExtendedHash = sortedParameters.map(param => param.value).join('|');
 
     // Calcula el hash utilizando HMAC-SHA256 y el sharedSecret como llave  
-    const hash = CryptoJS.HmacSHA256(stringForExtendedHash, 'i88E-;KYkS');
+    const hash = CryptoJS.HmacSHA256(stringForExtendedHash, 'S1ullu1s');
 
     // Convierte el hash a cadena utilizando Base64 
     const hashString = CryptoJS.enc.Base64.stringify(hash);
@@ -123,12 +123,11 @@ export const ProductDetail = () => {
         { name: 'hash_algorithm', value: 'HMACSHA256' },
         { name: 'responseFailURL', value: 'https://pagosonline.mx/DConnect/response.php' },
         { name: 'responseSuccessURL', value: 'https://pagosonline.mx/DConnect/response.php' },
-        { name: 'storename', value: '62666666' },
+        { name: 'storename', value: '62110594' },
         { name: 'timezone', value: 'America/Mexico_City' },
         { name: 'txntype', value: 'sale' },
         { name: 'txndatetime', value: txndatetime },
-        { name: 'stringForExtendedHash', value: stringForExtendedHash},
-       
+        //{ name: 'stringForExtendedHash', value: stringForExtendedHash},
         { name: 'hashExtended', value: hashString},
       ];
       //const hashString = calculateExtendedHash();
