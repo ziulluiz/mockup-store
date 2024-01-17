@@ -1,0 +1,43 @@
+.footer {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .copyright {
+    margin-bottom: 10px; /* Agrega espacio entre el texto y los enlaces si es necesario */
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente los enlaces y la imagen */
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .footer-link:hover {
+    color: var(--color-light);
+  }
+  
+  .fiserv-logo {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    margin: 0 15px; /* Agrega margen para espaciar la imagen de los enlaces */
+  }
+  
