@@ -83,6 +83,7 @@ export const ProductDetail = () => {
       { name: 'checkoutoption', value: 'combinedpage' },
       { name: 'currency', value: '484' },
       { name: 'hash_algorithm', value: 'HMACSHA256' },
+      { name: 'parentUri', value:'http://localhost:5173/'},
       { name: 'responseFailURL', value: 'https://pagosonline.mx/DConnect/response.php' },
       { name: 'responseSuccessURL', value: 'https://pagosonline.mx/DConnect/response.php' },
       { name: 'storename', value: '62110594' },
@@ -111,6 +112,7 @@ export const ProductDetail = () => {
     form.id = 'inputForm'; // Asigna el ID al formulario
     form.method = 'POST'; // Establece el método del formulario a POST
     form.action = 'https://test.ipg-online.com/connect/gateway/processing';
+    form.target = 'myFrame'
     document.body.appendChild(form);
     //const form = document.getElementById('inputForm') as HTMLFormElement;
     if (form){
@@ -121,6 +123,7 @@ export const ProductDetail = () => {
         { name: 'checkoutoption', value: 'combinedpage' },
         { name: 'currency', value: '484' },
         { name: 'hash_algorithm', value: 'HMACSHA256' },
+        { name: 'parentUri', value:'http://localhost:5173/'},
         { name: 'responseFailURL', value: 'https://pagosonline.mx/DConnect/response.php' },
         { name: 'responseSuccessURL', value: 'https://pagosonline.mx/DConnect/response.php' },
         { name: 'storename', value: '62110594' },
@@ -163,6 +166,7 @@ export const ProductDetail = () => {
           <button className='btn btn-primary' onClick={handleBuyNowClick}>Buy Now</button>
         </div>
       </article>
+      <iframe className="myFrame"></iframe>
     </div>
   );
 };
