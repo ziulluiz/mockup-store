@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 import audifonos from '../../assets/audifonos.jpg';
 import bocina from '../../assets/bocina.jpg';
 import iphone from '../../assets/iphone.jpg';
@@ -29,22 +30,6 @@ export const Carousel: React.FC = () => {
   };
 
   return (
-    // <div className="carousel-container">
-    //   <Slider {...settings}>
-    //     <div className='carousel-item'>
-    //       <img src={audifonos} alt="Slide 1" />
-    //     </div>
-    //     <div className='carousel-item'>
-    //       <img src={bocina} alt="Slide 2" />
-    //     </div>
-    //     <div className='carousel-item'>
-    //       <img src={iphone} alt="Slide 3" />
-    //     </div>
-    //     <div className='carousel-item'>
-    //       <img src={S23} alt="Slide 4" />
-    //     </div>
-    //   </Slider>
-    // </div>
     <div className="carousel-container">
     <Slider {...settings}>
       {products.map((product) => (
